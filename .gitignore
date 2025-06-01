@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Cypress test outputs
+cypress/screenshots/
+cypress/videos/
+cypress/reports/
+cypress/results/
+cypress/downloads/
+
+# Merged and HTML reports
+cypress/reports/*.json
+cypress/reports/*.html
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Compiled JS (if applicable)
+*.js
+*.js.map
+
+# Misc
+coverage/
