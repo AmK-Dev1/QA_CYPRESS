@@ -16,6 +16,8 @@ describe('Module 1 - Page 1 Test Form', () => {
     page.fillLastName(data.lastName);
     page.selectGender(data.gender);
     page.fillPhone(data.phone);
+    page.selectState(data.state);
+    page.selectCity(data.city);
     page.clickButton();
 
     // Assert

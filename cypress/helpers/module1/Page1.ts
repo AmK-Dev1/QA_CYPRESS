@@ -42,6 +42,25 @@ export class Page1 {
     cy.get('#submit').click();
   }
 
+  selectState(state : string)
+  {
+    // first click on the arrow to show list : 
+    cy.xpath("(//div[contains(@class, 'indicatorContainer')])[1]").click();
+    // 
+    cy.xpath(`//div[contains(@id, 'react-select-3-option') and contains(text(), '${state}')]`).click();
+
+  }
+
+
+  selectCity(city : string)
+  {
+    
+    // first click on the arrow to show list : 
+    cy.xpath("(//div[contains(@class, 'indicatorContainer')])[2]").click();
+
+    cy.xpath(`//div[contains(@id, 'react-select-4-option') and contains(text(), '${city}')]`).click();
+
+  }
   assert()
   {
 cy.get('#example-modal-sizes-title-lg')
